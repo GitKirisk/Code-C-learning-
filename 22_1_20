@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int hun, ten, i, k;
+    printf("结果是:");
+    for( k=100; k<1000; k++ )  
+    {
+        hun = k / 100;
+        ten = (k-hun*100) / 10;
+        i = k % 10;
+        if(k == hun*hun*hun + ten*ten*ten + i*i*i)  //各位上的立方和是否与原数n相等
+            printf("%d  ", k);
+    }
+    printf("\n");
+       return 0;
+}
+//求水仙花数
