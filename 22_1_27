@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	char c,c1,c2;
+	printf("请输入任意一串字符:\n");
+	scanf("%c",&c);
+	c1=c-1;
+	c2=c+1;
+	printf("前驱字符为%c，后继字符为%c\n",c1,c2);
+	return 0;
+}
+//随意输入一串字符，打印出它的前驱以及后继字符
