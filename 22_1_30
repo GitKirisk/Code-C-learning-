@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int m,n;
+    scanf("%d %d",&m,&n);
+    int i;
+    if(m<=n&&m!=0&&n!=0){
+    double sum=0.0;
+    for(i=m;i<=n;i++)
+    {
+        sum+=(double)pow(i,2)+1.0/i;
+    }
+    printf("sum = %.6lf\n",sum);}
+    return 0;
+}
+//对两个正整数m和n（m≤n）编写程序，计算序列和m^2^+1/m+(m+1)^​2^+1/(m+1)+⋯+n^2^+1/n
