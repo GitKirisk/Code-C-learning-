@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int a,s=1;
+    for(a=1;a<15;a++)
+        s=a*s;
+        
+    printf("%d!=%d\n",a-1,s);
+    return 0;
+}
