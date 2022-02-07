@@ -1,0 +1,20 @@
+#include <stdio.h>
+void 10zhuan2( int n );
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    10zhuan2(n);
+    return 0;
+}
+void 10zhuan2( int n )
+{
+    if(n<2)
+    printf("%d",n%2);
+    else
+    {
+        10zhuan2(n/2);
+        printf("%d",n%2);
+    }
+}
+//10进制数转换为2进制数
