@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	float x[10] = {97,98,99,95,93,91,51,49,96,86};
+	int i = 0;
+        float sum = 0;
+	float aver;
+	for(i=0;i<10;i++)
+		sum=sum+x[i];
+	average=(float)(sum/10);
+	printf("%.3f\n",average);
+}
+//计算平均值
