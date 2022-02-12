@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int h,m,s,n,ad;
+    scanf("%d:%d:%d",&h,&m,&s);
+    scanf("%d",&n);
+    ad=3600*h+60*m+s+n;
+    ad=ad%86400;
+    h=(ad-ad%3600)/3600;
+    ad=ad%3600;
+    m=(ad-ad%60)/60;
+    ad=ad%60;
+    s=ad;
+    printf("%02d:%02d:%02d",h,m,s);
+}
