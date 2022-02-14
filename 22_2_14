@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include <math>
+int main()
+{
+  int n, s = 0, t=1;
+  for (n = 1; n <= 3; n++)
+  {
+    t *= n;
+    s += t;
+  }
+  printf("1+2!+...+3!=%d\n", s);
+  return 0;
+}
+//求1+2!+...+3!+...的和（如果要求10项，循环就改为10.以此类推）
